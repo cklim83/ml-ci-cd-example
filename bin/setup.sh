@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+# Reason for using /usr/bin/env bash instead of /bin/bash for shebang https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html
 
-set -e
+set -e # exit script if any evaluation exit status fails i.e. evaluates to 1
 
 export PATH=$HOME/google-cloud-sdk/bin:$HOME/miniconda3/bin:$PATH # set path to google cloud and conda binaries so that subsequent commands can run
 export virtual_environment_name="ml-ci-cd-example"
